@@ -4,9 +4,7 @@
 // 12821 -> да
 // 23432 -> да 
 
-
- int num, rem, sum = 0, temp;
-        
+int num, rem, sum = 0, temp;      
 Console.WriteLine("Найти число, является ли оно палиндромом или нет.");
 Console.Write("Введите число: ");
 num = Convert.ToInt32(Console.ReadLine());
@@ -26,4 +24,4 @@ else
 {
     Console.WriteLine("Число не является палиндромом");
 }
-    Console.ReadLine();
+Console.ReadLine();
