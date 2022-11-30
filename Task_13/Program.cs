@@ -5,7 +5,10 @@
 
  
 Console.Write("Введите число : "); 
-string input = Convert.ToString(Console.ReadLine());
+string? input = Console.ReadLine();
+if (string.IsNullOrEmpty(input)) {
+    return;
+}
 if (input.Length < 3) 
 {
     Console.Write("Третьего числа нет");
