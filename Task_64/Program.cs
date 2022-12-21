@@ -10,12 +10,12 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.Write($"M = {m}, N = {n} - все чётные натуральные числа в промежутке:");
+Console.Write($"M = {m}; N = {n} - все чётные натуральные числа в промежутке:");
 PrintValue(m, n);
 
 void PrintValue(int m, int max)
 {
     if (m > max) return;
-    if (m % 2 == 0) Console.Write($" {m}");
+    if (m % 2 == 0) Console.Write($" {m}, ");
     PrintValue(m + 1, max);
 }
